@@ -14,4 +14,4 @@ L1 绪论
 
 [L9 多分类算法](L9/README.md)
 
-[L9 神经网络](L10_11/README.md)
+[L10_11 神经网络](L10_11/README.md)
