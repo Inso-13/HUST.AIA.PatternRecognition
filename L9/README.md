@@ -4,8 +4,8 @@
 
 ### (a) OVO 多类分类器
 
-+ 代码
-  
++ OVO代码
+
 ```python
 import csv
 from src.PLA import *
@@ -100,9 +100,10 @@ class OVO:
                     test_x.append(item_x)
                     test_y.append(-1)
         return train_x, train_y, test_x, test_y
-
 ```
 
++ 测试代码
+  
 ```python
 from src.OVO import *
 
@@ -128,7 +129,29 @@ Test accuracy: 0.95
 
 ### (b) Softmax算法
 
-+ 代码
++ Softmax代码
+
+```python
+def softmax(z):
+    if len(z.shape) == 2:
+        batch_size = z.shape[0]
+        num_classes = z.shape[1]
+        z_max = np.max(z.detach().numpy(), axis=1)
+        z_max = torch.from_numpy(z_max).expand((num_classes, batch_size)).T
+        z = torch.subtract(z, z_max)
+        exp_z = torch.exp(z)
+        sum_z = torch.sum(exp_z, axis=1)
+        return torch.div(exp_z.T, sum_z).T
+    else:
+        z_max = np.max(z.detach().numpy())
+        z_max = z_max * torch.ones_like(z)
+        z = torch.subtract(z, z_max)
+        exp_z = torch.exp(z)
+        sum_z = torch.sum(exp_z)
+        return torch.div(exp_z.T, sum_z)
+```
+
++ 测试代码
 
 ```python
 import torch.optim as optim
@@ -345,7 +368,7 @@ plt.show()
     
 ## 2. MNIST数据集
 
-+ 代码
++ 测试代码
 
 ```python
 import numpy as np
