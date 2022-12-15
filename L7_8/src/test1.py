@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-from src.PrimalSVM import *
-from src.util import *
+from lib.PrimalSVM import *
+from lib.util import *
 
 if __name__ == "__main__":
     size = 200

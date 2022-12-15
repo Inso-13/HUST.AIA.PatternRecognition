@@ -2,8 +2,8 @@ import numpy as np
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.autograd import Variable
-from src.cross_entropy import *
-from src.softmax import *
+from lib.cross_entropy import *
+from lib.softmax import *
 import matplotlib.pyplot as plt
 
 # Training settings

@@ -2,7 +2,7 @@ import torch
 import torchvision as tv
 import matplotlib.pyplot as plt
 import numpy as np
-from src.LeNet import *
+from lib.LeNet import *
 
 epochs = 10
 batch_size = 256

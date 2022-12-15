@@ -59,9 +59,9 @@ class GD:
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-from src.inverse import *
-from src.gradient_descent import *
-from src.util import *
+from lib.inverse import *
+from lib.gradient_descent import *
+from lib.util import *
 
 
 if __name__ == "__main__":
@@ -126,9 +126,9 @@ if __name__ == "__main__":
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-from src.inverse import *
-from src.gradient_descent import *
-from src.util import *
+from lib.inverse import *
+from lib.gradient_descent import *
+from lib.util import *
 
 
 if __name__ == "__main__":
@@ -335,7 +335,7 @@ class Adam(base_optimizer):
 ```
 ### 测试代码
 ```python
-from src.optimizer import *
+from lib.optimizer import *
 import matplotlib.pyplot as plt
 import math
 
@@ -374,12 +374,12 @@ if __name__ == "__main__":
 ```
 + 输出结果
   
-        class name: <class 'src.optimizer.GD'>, x: -1.0957845598538827, f(x): -0.7144099321984125
-        class name: <class 'src.optimizer.SGD'>, x: -1.0957845598538827, f(x): -0.7144099321984125
-        class name: <class 'src.optimizer.Momentum'>, x: 2.943042488108246, f(x): -1.985900284700558
-        class name: <class 'src.optimizer.Adagrad'>, x: -1.1084631116897157, f(x): -0.7142707804225432
-        class name: <class 'src.optimizer.RMSProp'>, x: -1.0954107473553287, f(x): -0.7144100461909331
-        class name: <class 'src.optimizer.Adam'>, x: 0.07825619990244456, f(x): 0.07810843567379486
+        class name: <class 'lib.optimizer.GD'>, x: -1.0957845598538827, f(x): -0.7144099321984125
+        class name: <class 'lib.optimizer.SGD'>, x: -1.0957845598538827, f(x): -0.7144099321984125
+        class name: <class 'lib.optimizer.Momentum'>, x: 2.943042488108246, f(x): -1.985900284700558
+        class name: <class 'lib.optimizer.Adagrad'>, x: -1.1084631116897157, f(x): -0.7142707804225432
+        class name: <class 'lib.optimizer.RMSProp'>, x: -1.0954107473553287, f(x): -0.7144100461909331
+        class name: <class 'lib.optimizer.Adam'>, x: 0.07825619990244456, f(x): 0.07810843567379486
 
 
 + 图像
@@ -388,12 +388,12 @@ if __name__ == "__main__":
 
 + 若迭代50次，并将Adam的beta1改为0.99
   
-        class name: <class 'src.optimizer.GD'>, x: -1.0954107472034038, f(x): -0.7144100461909332
-        class name: <class 'src.optimizer.SGD'>, x: -1.0954107472034038, f(x): -0.7144100461909332
-        class name: <class 'src.optimizer.Momentum'>, x: 4.163605638526643, f(x): -4.129280029606941
-        class name: <class 'src.optimizer.Adagrad'>, x: -1.0954107472034036, f(x): -0.7144100461909332
-        class name: <class 'src.optimizer.RMSProp'>, x: -1.227603445544681, f(x): -0.6998680886340165
-        class name: <class 'src.optimizer.Adam'>, x: 5.3332602396639235, f(x): -2.666895266305945
+        class name: <class 'lib.optimizer.GD'>, x: -1.0954107472034038, f(x): -0.7144100461909332
+        class name: <class 'lib.optimizer.SGD'>, x: -1.0954107472034038, f(x): -0.7144100461909332
+        class name: <class 'lib.optimizer.Momentum'>, x: 4.163605638526643, f(x): -4.129280029606941
+        class name: <class 'lib.optimizer.Adagrad'>, x: -1.0954107472034036, f(x): -0.7144100461909332
+        class name: <class 'lib.optimizer.RMSProp'>, x: -1.227603445544681, f(x): -0.6998680886340165
+        class name: <class 'lib.optimizer.Adam'>, x: 5.3332602396639235, f(x): -2.666895266305945
   
   ![](img/p5_50.png)
 

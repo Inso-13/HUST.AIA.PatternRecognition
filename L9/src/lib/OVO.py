@@ -1,5 +1,5 @@
 import csv
-from src.PLA import *
+from .PLA import *
 
 
 class OVO:

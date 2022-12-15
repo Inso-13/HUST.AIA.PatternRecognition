@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-from src.Fisher import *
-from src.util import *
+from lib.Fisher import *
+from lib.util import *
 
 if __name__ == "__main__":
     mu1 = np.array([[-5, 0]])

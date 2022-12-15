@@ -1,6 +1,6 @@
 import numpy as np
 import cvxopt
-from src.util import *
+from .util import *
 
 
 class PrimalSVM:

@@ -1,6 +1,6 @@
 import csv
 import torch
-from src.BPNet import *
+from lib.BPNet import *
 
 epochs = 1000
 lr = 0.05

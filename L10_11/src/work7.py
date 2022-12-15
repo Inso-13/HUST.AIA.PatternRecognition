@@ -1,6 +1,4 @@
 import torch
-import torchvision as tv
-import matplotlib.pyplot as plt
 import numpy as np
 
 epochs = 1
@@ -40,7 +38,7 @@ optimizer = torch.optim.SGD(net.parameters(), lr=lr)
 
 
 def train(train_dataloader):
-    for batch_idx, (data, target) in enumerate(train_dataloader):
+    for _, (data, target) in enumerate(train_dataloader):
         optimizer.zero_grad()
         output = net(data)
         # loss

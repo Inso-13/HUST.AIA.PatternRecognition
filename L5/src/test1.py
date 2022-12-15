@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-from src.Logistic import *
-from src.util import *
+from lib.Logistic import *
+from lib.util import *
 
 if __name__ == "__main__":
     lr = 0.01

@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-from src.KernelSVM import *
-from src.util import *
+from lib.KernelSVM import *
+from lib.util import *
 
 
 def guass_kernel_function(x_i):

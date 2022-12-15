@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from src.inverse import *
-from src.gradient_descent import *
-from src.util import *
+from lib.inverse import *
+from lib.gradient_descent import *
+from lib.util import *
 
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@
 ```python
 import numpy as np
 import cvxopt
-from src.util import *
+from lib.util import *
 
 
 class PrimalSVM:
@@ -47,7 +47,7 @@ class PrimalSVM:
 ```python
 import numpy as np
 import cvxopt
-from src.util import *
+from lib.util import *
 
 
 class KernelSVM:
@@ -105,7 +105,7 @@ class KernelSVM:
 ### DualSVM算法
 
 ```python
-from src.KernelSVM import *
+from lib.KernelSVM import *
 
 
 class DualSVM(KernelSVM):
@@ -123,8 +123,8 @@ class DualSVM(KernelSVM):
 
 ```python
 import matplotlib.pyplot as plt
-from src.PrimalSVM import *
-from src.util import *
+from lib.PrimalSVM import *
+from lib.util import *
 
 if __name__ == "__main__":
     size = 200
@@ -287,8 +287,8 @@ test_x, test_y = np.array([123.28, 25.45]), np.array([1])
 ```python
 import matplotlib.pyplot as plt
 from numpy.core.numeric import ones_like
-from src.KernelSVM import *
-from src.util import *
+from lib.KernelSVM import *
+from lib.util import *
 
 
 def guass_kernel_function(x_i):

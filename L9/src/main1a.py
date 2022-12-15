@@ -1,4 +1,4 @@
-from src.OVO import *
+from lib.OVO import *
 
 
 if __name__ == "__main__":

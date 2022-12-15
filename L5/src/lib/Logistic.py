@@ -1,4 +1,4 @@
-from src.optimizer import *
+from .optimizer import *
 
 
 class Logistic:

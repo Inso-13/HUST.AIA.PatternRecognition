@@ -8,7 +8,7 @@
 
 ```python
 import csv
-from src.PLA import *
+from lib.PLA import *
 
 
 class OVO:
@@ -105,7 +105,7 @@ class OVO:
 + 测试代码
   
 ```python
-from src.OVO import *
+from lib.OVO import *
 
 
 if __name__ == "__main__":
@@ -156,8 +156,8 @@ def softmax(z):
 ```python
 import torch.optim as optim
 from torch.autograd import Variable
-from src.cross_entropy import *
-from src.softmax import *
+from lib.cross_entropy import *
+from lib.softmax import *
 import matplotlib.pyplot as plt
 import csv
 
@@ -375,8 +375,8 @@ import numpy as np
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.autograd import Variable
-from src.cross_entropy import *
-from src.softmax import *
+from lib.cross_entropy import *
+from lib.softmax import *
 import matplotlib.pyplot as plt
 
 # Training settings

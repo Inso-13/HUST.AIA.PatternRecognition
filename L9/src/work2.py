@@ -1,7 +1,7 @@
 import torch.optim as optim
 from torch.autograd import Variable
-from src.cross_entropy import *
-from src.softmax import *
+from lib.cross_entropy import *
+from lib.softmax import *
 
 train_x = torch.tensor([[3.0, 0.0], [3.0, 6.0], [0.0, 3.0], [-3.0, 0.0]])
 train_y = torch.tensor([[0], [0], [1], [2]])

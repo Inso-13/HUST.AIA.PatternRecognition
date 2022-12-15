@@ -1,4 +1,4 @@
-from src.KernelSVM import *
+from .KernelSVM import *
 
 
 class DualSVM(KernelSVM):
